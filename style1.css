@@ -1,0 +1,259 @@
+*{
+    margin:0;
+    font-family: Arial;
+}
+.navbar{
+    height:60px;
+    background-color: #0F1111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly ;
+}
+.nav-logo{
+    height: 50px;
+    width:100px;
+}
+img{
+    height:50px;
+    width:100px;
+}
+.border{
+    border: 2px solid transparent;
+}
+.border:hover{
+    border: 1.5px solid white;
+}
+/*box 2*/
+.add-first{
+    color:#cccccc;
+    font-size: 0.85rem;
+    margin-left:15px;
+}
+.add-icon{
+    display: flex;
+    align-items: center;
+}
+.add-sec{
+  
+    font-size: 1rem;
+    margin-left: 3px;
+}
+/*box 3*/
+.nav-search{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: orange;
+    width:625px;
+    height:40px;
+    border-radius: 4px; 
+    
+}
+.search-select{
+    background-color: #f3f3f3;
+    width:50px;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border:none;
+}
+.search-input{
+    width:100%;
+    font-size:1rem;
+    border: none;
+}
+.search-icon{
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color:hsl(39, 100%, 50%) ;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: #0F1111;
+}
+.nav-search:hover{
+    border: 2px solid orange;
+}
+/* box 4 */
+span{
+    font-size: 0.7rem;
+}
+.nav-second{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+.nav-cart i{
+    font-size: 30px;
+}
+.nav-cart{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+/*panel*/
+.panel{
+    height:40px;
+    background-color: #222f3d;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.panel-ops p{
+    display: inline;
+    margin: left 10px;
+    margin-left: 1rem;
+}
+.panel-ops{
+    width:70%;
+    font-size: 0.85;
+   
+}
+.panel-deals{
+    font-size:0.9rem;
+    font-weight: 700;
+}
+.shop-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #e2e7e6;
+   
+} 
+.box{
+   
+    height: 400px;
+    width: 23%;
+    background-color: white;
+    padding: 20px 0px 15px;
+    margin: 10px;
+}
+.box-image{
+    height: 300px;
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+.box:hover{
+        background-color: #f3f3f3;
+        
+}
+.box-content{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.cart{
+   /*  border-radius: 20%; */
+    background-color:white;
+    color: black;
+    cursor: pointer;
+    text-decoration: solid;
+}
+.cart:hover{
+    background-color:gold;
+}
+/*Footer */
+img{
+    height:50px;
+    width:100px;
+}
+.foot-panel1{
+    color: white;
+    background-color: #37475a;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foot-panel2{
+    color: white;
+    background-color: #222f3d;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+ul{
+    margin-top: 25px;
+    
+}
+ul p{
+    font-weight: 550;
+}
+ul a{
+    display: block;
+    font-size: 0.85rem;
+    margin-top: 10px;
+    color: #dddddd;
+   
+}
+.foot-panel3{
+    background-color:#222f3d;
+    color: white;
+    height: 70px;
+    border-top:0.5px solid white;
+    display: flex;
+    justify-content: center;
+}
+.foot-panel4{
+    background-color: #0F1111;
+    color: white;
+    height: 75px;
+    text-align: center;
+    font-size: 0.75rem;
+   
+}
+.pages{
+    padding-top: 25px;
+}
+.copyright{
+    padding: 10px;
+}
+
+
+/* Center the form vertically */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+/* Adjust form width and spacing */
+#login-form {
+    width: 300px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the form inputs */
+.form-control {
+    border-color: #d5d5d5;
+}
+
+/* Style the form labels */
+.form-group label {
+    color: #444444;
+}
+
+/* Style the form button */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .product-card {
+        border: 1px solid #ccc;
+        padding: 10px;
+        width: 300px;
+        margin: 10px;
+        text-align: center;
+      }
+
+      .product-image {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .product-title {
+        font-size: 18px;
+        margin-top: 10px;
+      }
+
+      .product-price {
+        font-size: 16px;
+        color: #e51a4c;
+        margin-top: 5px;
+      }
+
+      .product-description {
+        font-size: 14px;
+        margin-top: 10px;
+      }
+
+      .buttons-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+      }
+
+      .order-button,
+      .cancel-button {
+        padding: 5px 10px;
+        cursor: pointer;
+      }
+    </style>
+    <script>
+      function orderProduct(card) {
+        alert(
+          "Your order for " +
+            card.querySelector(".product-title").textContent +
+            " has been placed successfully!"
+        );
+      }
+
+      function cancelOrder(card) {
+        card.remove();
+      }
+    </script>
+  </head>
+  <body>
+    <div class="product-card">
+      <img class="product-image" src="./images/beautypicks/hair sponge and pick.jpg" alt="Product 1" />
+      <h2 class="product-title">Hair sponge and pick</h2>
+      <p class="product-price">299/-</p>
+      <div class="buttons-container">
+        <button
+          class="order-button"
+          onclick="orderProduct(this.parentElement.parentElement)"
+        >
+          Order Now
+        </button>
+        <button
+          class="cancel-button"
+          onclick="cancelOrder(this.parentElement.parentElement)"
+        >
+        Remove
+        </button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img class="product-image" src="./images/Electronics/Desktop.jpg" alt="Product 1" />
+      <h2 class="product-title">Desktop</h2>
+      <p class="product-price">59999/-</p>
+      <div class="buttons-container">
+        <button
+          class="order-button"
+          onclick="orderProduct(this.parentElement.parentElement)"
+        >
+          Order Now
+        </button>
+        <button
+          class="cancel-button"
+          onclick="cancelOrder(this.parentElement.parentElement)"
+        >
+        Remove
+        </button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img class="product-image" src="./images/Electronics/One plus Mobile.jpg" alt="Product 1" />
+      <h2 class="product-title">One plus Mobile</h2>
+      <p class="product-price">29999/-</p>
+      <div class="buttons-container">
+        <button
+          class="order-button"
+          onclick="orderProduct(this.parentElement.parentElement)"
+        >
+          Order Now
+        </button>
+        <button
+          class="cancel-button"
+          onclick="cancelOrder(this.parentElement.parentElement)"
+        >
+        Remove
+        </button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img class="product-image" src="./images/clothes/tshirt for women.jpg" alt="Product 1" />
+      <h2 class="product-title">T-shirt for women</h2>
+      <p class="product-price">599/-</p>
+      <div class="buttons-container">
+        <button
+          class="order-button"
+          onclick="orderProduct(this.parentElement.parentElement)"
+        >
+          Order Now
+        </button>
+        <button
+          class="cancel-button"
+          onclick="cancelOrder(this.parentElement.parentElement)"
+        >
+        Remove
+        </button>
+      </div>
+    </div>
+
+   
+    <div class="product-card">
+      <img class="product-image" src="./images/healthcare/baby grooming kit.jpg" alt="Product 1" />
+      <h2 class="product-title">Baby grooming kit</h2>
+      <p class="product-price">299/-</p>
+      <div class="buttons-container">
+        <button
+          class="order-button"
+          onclick="orderProduct(this.parentElement.parentElement)"
+        >
+          Order Now
+        </button>
+        <button
+          class="cancel-button"
+          onclick="cancelOrder(this.parentElement.parentElement)"
+        >
+        Remove
+        </button>
+      </div>
+    </div>
+
+   
+
+    <div class="product-card">
+      <img class="product-image" src="./images/kids/teddybear.jpg" alt="Product 1" />
+      <h2 class="product-title">Teddybear</h2>
+      <p class="product-price">599/-</p>
+      <div class="buttons-container">
+        <button
+          class="order-button"
+          onclick="orderProduct(this.parentElement.parentElement)"
+        >
+          Order Now
+        </button>
+        <button
+          class="cancel-button"
+          onclick="cancelOrder(this.parentElement.parentElement)"
+        >
+        Remove
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

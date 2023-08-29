@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orders</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .product-card,
+      .order-card {
+        border: 1px solid #ccc;
+        padding: 10px;
+        width: 300px;
+        margin: 10px;
+        text-align: center;
+      }
+
+      .product-image {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .product-title {
+        font-size: 18px;
+        margin-top: 10px;
+      }
+
+      .product-price {
+        font-size: 16px;
+        color: #e51a4c;
+        margin-top: 5px;
+      }
+
+      .product-description {
+        font-size: 14px;
+        margin-top: 10px;
+      }
+
+      .buttons-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+      }
+
+      .order-button,
+      .track-button,
+      .cancel-button {
+        padding: 5px 10px;
+        cursor: pointer;
+      }
+    </style>
+    <script>
+      const orderedProducts = [];
+
+      function orderProduct(card) {
+        const productTitle = card.querySelector(".product-title").textContent;
+        orderedProducts.push(productTitle);
+        card.remove();
+      }
+
+      function trackOrder() {
+        if (orderedProducts.length === 0) {
+          alert("No orders to track.");
+        } else {
+          const trackingMessage =
+            "Your ordered products are being prepared and will be delivered soon.\n\nOrdered Products:\n";
+          const productsList = orderedProducts
+            .map((product, index) => `${index + 1}. ${product}`)
+            .join("\n");
+          alert(trackingMessage + productsList);
+        }
+      }
+
+      function cancelOrder(card) {
+        card.remove();
+      }
+    </script>
+  </head>
+  <body>
+   
+    <div class="product-card">
+      <img class="product-image" src="./images/Electronics/Desktop.jpg" alt="Product 1" />
+      <h2 class="product-title">Desktop</h2>
+      <p class="product-price">59999/-</p>
+      <div class="buttons-container">
+        <button
+          class="order-button"
+          onclick="orderProduct(this.parentElement.parentElement)"
+        >
+          Order Now
+        </button>
+        <button
+          class="cancel-button"
+          onclick="cancelOrder(this.parentElement.parentElement)"
+        >
+        Cancel
+        </button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img class="product-image" src="./images/Electronics/One plus Mobile.jpg" alt="Product 1" />
+      <h2 class="product-title">One plus Mobile</h2>
+      <p class="product-price">29999/-</p>
+      <div class="buttons-container">
+        <button
+          class="order-button"
+          onclick="orderProduct(this.parentElement.parentElement)"
+        >
+          Order Now
+        </button>
+        <button
+          class="cancel-button"
+          onclick="cancelOrder(this.parentElement.parentElement)"
+        >
+        Cancel
+        </button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img class="product-image" src="./images/clothes/tshirt for women.jpg" alt="Product 1" />
+      <h2 class="product-title">T-shirt for women</h2>
+      <p class="product-price">599/-</p>
+      <div class="buttons-container">
+        <button
+          class="order-button"
+          onclick="orderProduct(this.parentElement.parentElement)"
+        >
+          Order Now
+        </button>
+        <button
+          class="cancel-button"
+          onclick="cancelOrder(this.parentElement.parentElement)"
+        >
+        Cancel
+        </button>
+      </div>
+    </div>
+
+   
+    <div class="order-card">
+      <h2 class="product-title">Ordered Products</h2>
+    <!--   <ul>
+        < Use JavaScript to populate this list with ordered products >
+      </ul> -->
+      <button class="track-button" onclick="trackOrder()">Track</button>
+      <button class="cancel-button" onclick="cancelOrder(this.parentElement)">
+        Cancel
+      </button>
+    </div>
+  </body>
+</html>
